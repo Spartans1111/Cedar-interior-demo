@@ -52,8 +52,7 @@ const Footer = () => {
           <h6>CONTACT</h6>
           <div className="blurb">
             <i>{<IoLocationOutline />}</i>
-            <p>
-              7th Avenue, Naibi street <br />
+            <p>7th Avenue, Naibi street <br />
               Pallakad, Kerala, INDIA - 682028
             </p>
           </div>

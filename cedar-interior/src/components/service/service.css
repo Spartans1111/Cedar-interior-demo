@@ -95,3 +95,151 @@
     height: 4vh;
     
 }
+
+
+
+
+
+
+@media screen and (max-width:1024px) {
+    .servicehero{
+        height: 50vh;
+    }
+    .servicehero1{
+        margin-top: -15%;
+        gap: 25px;
+        flex-direction: column-reverse;
+    align-items: center;
+    }
+    .servicehero1 .discount{
+        margin: 0 auto;
+        text-align: center;
+        box-shadow: rgba(0, 0, 0, 0.18) 0px 3px 8px;
+        margin-top: 25px;
+    }
+    .serviceinterior {
+        flex-direction: column;
+        padding: 2rem 0rem;
+    }
+    .sercol1::before{
+        position: absolute;
+        content: '';
+        background-color: #F2F2F2;
+        border-top-right-radius: 25px;
+        border-bottom-right-radius: 25px;
+  
+        left: 0%;
+        top: 0%;
+        width:100%;
+        height: 50%;
+    
+    }
+    .serviceinterior .service-slide{
+        margin-top: 4rem;
+    }
+    .sercol2{
+        padding: 1rem 4rem;
+    }
+    .homeservicecard{
+        flex-wrap: wrap;
+    }
+    .homeservicecard .homesercardcol{
+        width: 48%;
+        margin-bottom: 25px;
+        padding: 2rem 2rem;
+        box-shadow: rgba(0, 0, 0, 0.18) 0px 3px 8px;
+    }
+    .serviceabt{
+        padding: 2rem 1rem!important;
+    }
+    .serviceabtinner{
+        flex-direction: column;
+        gap: 25px;
+    }
+    .serviceabtinner .serviceabitinnercol1{
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+    }
+    .serviceabtinner .serviceabitinnercol{
+        width: 100%;
+    }
+    .serviceabitinnercol1 .servblurb1{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    .serviceabitinnercol1 .servblurb1 p{
+        text-align: center;
+    }
+
+    .servicehero1col:last-child {
+        margin-right: 0;
+    }
+
+    .service-main{
+        margin-bottom: 50px;
+    }
+}
+@media screen and (max-width:800px) {
+    .servicehero1 .discount{
+        width: 100%;
+        padding: 1rem;
+    }
+    .servicehero1 .discount .header2{
+        font-size: 24px;
+    }
+    .servicehero1col{
+        padding: 1rem 0rem;
+    }
+    .servicehero1{
+        padding: 0rem 1rem;
+    }
+}
+@media screen and (max-width:400px) {
+    .serviceinterior .service-slide{
+        width: 90%;
+        height: 50vh;
+    }
+    .sercol1 {
+        padding: 0rem;
+    }
+    .sercol2{
+        padding: 1rem 1rem;
+    }
+    .homeservice{
+        padding: 2rem 1rem!important;
+    }
+    .homeservicecard .homesercardcol{
+        width: 100%;
+        padding: 1rem 1rem;
+        height: auto;
+    }
+    .serviceabtinner{
+        padding: 1rem 1rem!important;
+    }
+    .serviceabitinnercol .row1{
+        flex-direction: column;
+    }
+    .serviceabitinnercol .header2{
+        font-size: 24px!important;
+    }
+    .serviceabitinnercol1 .servblurb1{
+        padding: 1rem 1rem;
+        align-items: self-start;
+    }
+    .serviceabitinnercol1 .servblurb1 p{
+        text-align: left;
+    }
+    .serviceabitinnercol1 .servblurb1 .smallhead{
+        font-size: 24px!important;
+    }
+    .serviceabitinnercol .row1 .col2{
+        text-align: left!important;
+    }
+    .serviceabitinnercol .row1{
+        margin: 0rem 0rem 0rem 0rem!important;
+    }
+
+}

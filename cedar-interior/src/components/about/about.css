@@ -48,7 +48,7 @@
 .h-slide {
   min-width: 100%;
   height: 100%;
-}
+} 
 
 .h-slide img {
   width: 100%;
@@ -56,6 +56,7 @@
   object-fit: cover;
   border-radius: 20px;
 }
+
 .aboutheroright {
   margin-left: 1rem;
   align-self: center;
@@ -222,6 +223,7 @@
   display: flex;
   justify-content: center;
   align-items: center;
+  /* gap: 35px; */
 }
 .bestsellcard {
   position: relative;
@@ -233,34 +235,34 @@
   margin-bottom: 25px;
 }
 
-.bestsellcard img {
+.bestsellcard img{
   position: relative;
-  border-radius: 15px;
-  width: 100%;
-  object-fit: cover;
-}
-.bestsellcard::before {
-  content: "";
+   border-radius: 15px;
+     width: 100%;
+     object-fit: cover;
+  }
+.bestsellcard::before{
+  content: '';
   position: absolute;
   border-radius: 50px;
   background-color: #ff000000;
-  box-shadow: 15px 30px 10px #ffffff;
-  width: 24px;
-  height: 52px;
-  left: 35%;
+  box-shadow: 14px 22px 0px #ffffff;
+  width: 7.5%;
+  height: 39px;
+  left: 32.5%;
   bottom: 4px;
   z-index: 5;
 }
-.bestsellcard::after {
-  content: "";
+.bestsellcard::after{
+  content: '';
   position: absolute;
   border-radius: 50px;
-  background-color: #c9101000;
-  box-shadow: 15px 20px 0px #ffffff;
-  width: 32px;
-  height: 30px;
+  background-color: transparent;
+  box-shadow: 15px 17px 0px #ffffff;
+  width: 35px;
+  height: 36px;
   right: 0%;
-  bottom: 81px;
+  bottom: 14.5%;
   z-index: 5;
 }
 .bestsellcard .bestbtn {
@@ -276,12 +278,12 @@
   margin-top: 0px;
   font-size: 14px;
   border-radius: 20px;
-  padding: 1.7rem;
+  padding: 1rem;
 }
 .bestselling p {
   font-size: 14px;
   line-height: 2.3em;
-  margin-top: 15px;
+  margin-top: 20px;
 }
 .bestp {
   font-family: "Montserrat", sans-serif;
@@ -369,19 +371,35 @@
   .about-card img {
     width: 30%;
   }
-  .bestsellcard {
-    position: relative;
-    width: 85%;
-  }
-
-  .bestselling {
-    padding: 4rem 2rem;
-  }
 
   .about-main{
     margin-bottom: 50px;
   }
+
+  .bestselling {
+    padding: 6rem 4rem;
+    gap: 35px;
+  }
+  .bestsellcard {
+    position: relative;
+    width: 95%;
+    margin: 0 auto;
+  }
+
+  .bestsellcard::after {
+    content: '';
+    position: absolute;
+    border-radius: 50px;
+    background-color: #c9101000;
+    box-shadow: 15px 17px 0px #ffffff;
+    width: 35px;
+    height: 30px;
+    right: 0%;
+    bottom: 16.1% !important;
+    z-index: 5;
 }
+}
+
 
 @media screen and (max-width: 800px) {
   .about-hero {
@@ -452,6 +470,26 @@
   .about-card .about1-col .blurb p {
     margin-top: 5px;
   }
+  .bestselling {
+    flex-direction: column;
+  }
+
+  .bestsellcard {
+    width: 100%;
+}
+
+  .bestsellcard::after {
+    content: '';
+    position: absolute;
+    border-radius: 50px;
+    background-color: #c9101000;
+    box-shadow: 15px 17px 0px #ffffff;
+    width: 35px;
+    height: 30px;
+    right: 0%;
+    bottom: 14.1% !important;
+    z-index: 5;
+}
 }
 @media screen and (max-width: 400px) {
   .about-hero {
@@ -513,7 +551,7 @@
   }
 
   .bestselling {
-    display: flex;
+    display: block;
     flex-direction: column;
     padding: 2rem 1rem;
   }
@@ -521,11 +559,40 @@
     width: 100%;
   }
 
+  .primumimg{
+    flex-direction: column;
+  }
+
   .primumimg .aboutimgarrow {
     margin-left: 0;
   }
 
-  .bestsellcol:last-child{
-    margin: 0 20px;
+  .bestsellcol .header2, .bestsellcol h6{
+    font-size: 27px;
   }
+
+  .bestsellcard::before {
+    content: '';
+    position: absolute;
+    border-radius: 50px;
+    background-color: #ff000000;
+    box-shadow: 14px 22px 0px #ffffff;
+    width: 36px;
+    height: 39px;
+    left: 29% !important;
+    bottom: 4px;
+}
+
+.bestsellcard::after {
+  content: '';
+  position: absolute;
+  border-radius: 50px;
+  background-color: #c9101000;
+  box-shadow: 15px 17px 0px #ffffff;
+  width: 35px;
+  height: 30px;
+  right: 0%;
+  bottom: 20% !important;
+  z-index: 5;
+}
 }

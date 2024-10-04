@@ -15,7 +15,7 @@
 }
 
 .contact-address {
-  width: 100%;
+  width: 60%;
 
 }
 
@@ -60,6 +60,8 @@
   font-size: 13px;
   font-weight: 500;
   font-family: "Montserrat", sans-serif;
+  text-align: left;
+  margin-top: 0;
 }
 .contact p {
   color: #585148;
@@ -154,6 +156,19 @@
   vertical-align: middle;
 }
 
+.contactt-blurb-col .blurb:first-child{
+  position: relative;
+}
+.contactt-blurb-col .blurb:first-child::after{
+  content: '';
+  position: absolute;
+  right: -20%;
+ width: 2px;
+ height: 100%;
+ background-color: #d4caca;
+}
+
+
 @media screen and (max-width: 1024px) {
   .contact-top {
     padding: 0rem 6rem;
@@ -219,5 +234,19 @@
     margin-left: 0px;
     padding: 1rem 1rem;
   }
+
+  .contact-address {
+    width: 100%;
+}
+
+.contact-branch-inner {
+  justify-content: center;
+  padding: 0 1rem;
+  display: block;
+}
+
+.branch-col {
+  margin-bottom: 2rem;
+}
 
 }
