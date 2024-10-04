@@ -1,0 +1,54 @@
+.packagehero{
+    background: url('../../images//package/packagehero.png');
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 80vh;
+    width: 100%;
+    background-position: center;
+}
+.pakageshero1{
+    align-items: flex-end;
+    margin-top: -25%;
+    justify-content: space-between;
+    padding: 2rem 3rem;
+    background-color: transparent;
+      display: flex;
+}
+
+.packkageshero1col:last-child{
+  margin-top: -70px;
+  margin-right: 50px;
+}
+
+
+.pakageshero1 .smallhead{
+    margin-top: 15px;
+}
+.scrolldown {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #6A6155;
+font-family: "Encode Sans Expanded";
+padding: 3rem;
+font-size: 14px;
+    position: relative;
+  }
+  
+  .scrolldown::before,
+  .scrolldown::after {
+    content: '';
+    flex-grow: 1;
+    height: 1px;
+    background-color: #c0bcbc; 
+    margin: 0 10px; 
+  }
+
+
+  @media screen and (max-width:1024px){
+    .packkageshero1col:last-child{
+        margin-right: 0;
+      }
+  }
+  
+  

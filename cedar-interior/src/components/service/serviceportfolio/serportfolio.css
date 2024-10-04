@@ -1,0 +1,78 @@
+.serviceportfolio{
+  background-color: #fcfcfc;
+    padding: 3rem 0rem;
+    text-align: center;
+}
+.serviceportfolio .header2{
+    margin-bottom: 15px;
+}
+.servportfolioinner{
+    margin-top: 4rem;
+    padding: 3rem 0rem;
+    background-color: #F8F2EB;
+}
+.carousel-container {
+    margin: 3rem 0rem;
+    overflow: hidden;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .logo-carousel,
+  .logo-carousel1 {
+    display: flex;
+  }
+  
+  .logo-carousel {
+    animation: scroll-left 20s linear infinite;
+  }
+  
+  .logo-carousel1 {
+    margin-top:25px;
+    animation-direction: reverse!important;
+    animation: scroll-right 20s linear infinite;
+  }
+  
+  .logo-item {
+    flex-shrink: 0;
+    border-radius: 15px;
+    margin-right: 20px;
+  }
+  
+  .logo-item img {
+    border-radius: 15px;
+    width: 100%;
+    height: auto;
+    display: block;
+  }
+
+  .serviceportfolio .hr {
+    height: 2px;
+    width: 4%;
+    margin: 2rem auto;
+    background-color: #D18F44;
+  }
+  
+  /* Scroll from left to right (fix) */
+  @keyframes scroll-right {
+    0% {
+        transform: translateX(0);
+      }
+      100% {
+        transform: translateX(-100%);
+      }
+  }
+  
+  /* Scroll from right to left */
+  @keyframes scroll-left {
+    0% {
+      transform: translateX(0);
+    }
+    100% {
+      transform: translateX(-100%);
+    }
+  }
+  
+  

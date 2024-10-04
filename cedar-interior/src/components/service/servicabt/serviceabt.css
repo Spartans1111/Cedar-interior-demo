@@ -1,0 +1,87 @@
+.serviceabt{
+    background-color: #fcfcfc;
+    padding: 5rem 4rem;
+}
+.serviceabt .btn2{
+    justify-content: start;
+}
+.serviceabtinner{
+    background-color: #484133;
+    border-radius: 25px;
+    padding: 2rem 2rem;
+    display: flex;
+    justify-content: space-between;
+}
+.serviceabitinnercol1{
+    width: 25%;
+}
+.serviceabitinnercol1 .servblurb h3{
+    color: #fff;
+    font-size: 28px;
+    font-weight: 400;
+    margin-bottom: 18px;
+}
+.servblurb1 p{
+    margin: 1rem 0rem;
+}
+.servblurb1{
+    background-color: #f2f2f2;
+    padding: 2rem 2rem;
+    border-radius: 15px;
+}
+.servblurb1 .btn2{
+    margin-top: 15px;
+}
+
+.serviceabitinnercol1 .servblurb p{
+    color: #fff;
+}
+.serviceabitinnercol1 .servblurb{
+    text-align: center;
+    background-color: #ffffff0f;
+    padding: 1rem 1rem;
+    border-radius: 15px;
+    color: #fff;
+    margin-bottom: 25px;
+}
+.serviceabitinnercol{
+    overflow: hidden;
+    width: 68%;
+}
+.serviceabitinnercol .header2{
+       color: #E7E6E5;
+       font-weight: 400;
+    font-size: 46px;
+}
+.serviceabitinnercol .smallhead{
+    color: #e7e6e596;
+    font-size: 34px;
+    font-weight: 300;
+}
+.serviceabitinnercol .row1{
+    display: flex;
+    margin:1rem 0rem 2rem 0rem;
+    gap: 15px;
+    align-items: end;
+    justify-content: space-between;
+}
+.serviceabitinnercol .row1 .row1col{
+    flex: 1;
+}
+.serviceabitinnercol .row1 .col2{
+    text-align: right;
+}
+.serviceabitinnercol img{
+    border-radius: 15px;
+    width: 100%;
+}
+.serviceabitinnercol p{
+    color: #e7e6e59d;
+    font-family: "Montserrat", sans-serif;
+
+}
+.serviceabitinnercol .btn2{
+    justify-content: flex-start;
+    color: #e7e6e59d;
+    border: 1px solid #FFF;
+}

@@ -1,0 +1,142 @@
+.accordian {
+  font-family: "Montserrat", sans-serif;
+  padding: 6rem 6rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 9%;
+}
+.accordian .qa {
+  text-align: center;
+  display: inline-block;
+  color: #d9a365;
+  font-family: "Encode Sans Expanded";
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: normal;
+  letter-spacing: 0.30625rem;
+  text-transform: uppercase;
+  border-radius: 1.5rem;
+  background: #d9a36518;
+  backdrop-filter: blur(10px);
+  padding: 10px 25px;
+  margin-bottom: 25px;
+}
+.accordian .header2 {
+  color: #272535;
+  margin-bottom: 25px;
+  font-size: 40px;
+  font-style: normal;
+  font-weight: 400;
+  letter-spacing: 0.4px;
+  line-height: 1.3em;
+}
+.qa-exp {
+  color: #23212e;
+  font-family: "Montserrat", sans-serif;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 1.7rem;
+  letter-spacing: 0.035rem;
+}
+.accordian-col {
+  flex: 1;
+}
+
+.accordion-item {
+  border-bottom: 1px solid #ddddddb4;
+  overflow: hidden;
+  padding: 1.5rem 0px;
+  margin-bottom: 10px;
+}
+.accordion-header h3 {
+  font-family: "Montserrat", sans-serif;
+  font-size: 16px;
+  font-weight: 600;
+  letter-spacing: 0.32px;
+  color: #2c2e33;
+}
+.accordion-header span {
+  color: #000;
+  font: 14px;
+}
+.accordion-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.accordion-content {
+  max-height: 0;
+  overflow: hidden;
+  padding: 0 10px;
+  transition: max-height 0.5s ease-out, padding 0.5s ease-out;
+  opacity: 0;
+  transition: opacity 0.3s ease;
+}
+
+.accordion-content.active {
+  max-height: 1000px;
+  padding: 10px;
+  opacity: 1;
+}
+
+.accordion-content div {
+  font-family: "Montserrat", sans-serif;
+  line-height: 1.6rem;
+  padding: 10px 0;
+  transition: all 0.3s ease;
+}
+
+
+
+.accordian .accordian-col:first-child {
+    flex: 0 0 40%; /* First column takes 40% */
+  }
+  
+
+  @media screen and (max-width: 1024px) {
+    .accordian {
+      padding: 4rem 2rem;
+    }
+  }
+
+@media screen and (max-width: 800px) {
+  .accordian {
+    display: flex;
+    flex-direction: column;
+    padding: 4rem 2rem;
+  }
+  .accordion {
+    margin-top: 25px;
+  }
+  .accordian .qa {
+    line-height: 1.3rem;
+  }
+  .accordion-header h3 {
+    line-height: 1.4rem;
+  }
+}
+@media screen and (max-width: 400px) {
+  .accordian {
+    padding: 3rem 1rem;
+  }
+
+  .accordian .qa {
+    padding: 10px 15px;
+  }
+
+  .accordian .header2 {
+    font-size: 27px;
+  }
+
+  .accordion-header h3 {
+    font-size: 14px;
+    width: 90%;
+}
+}

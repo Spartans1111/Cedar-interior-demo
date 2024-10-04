@@ -1,0 +1,129 @@
+.Keralapkg{
+    background-color: #fcfcfc;
+    display: flex;
+    justify-content: space-between;
+    padding: 3rem 6rem;
+    gap: 50px;
+    overflow: hidden;
+}
+.kerlapkgcol .hrline{
+    width: 40%;
+    margin:2rem 0rem;
+}
+.kerlapkgcol{
+    flex: 1;
+}
+.kerlapkgcol .header2{
+    margin-bottom:25px;
+}
+.kerlapkgcol p{
+    margin-bottom: 25px;
+    text-align: justify;
+}
+.kerlapkgcol img{
+    margin-bottom: 25px;
+}
+@media screen and (max-width:1024px) {
+    .Keralapkg{
+        flex-direction: column;
+    }
+    .kerlapkgcol img{
+        object-fit: cover;
+        width: 100%;
+    }
+    .kerlapkgcol:first-child{
+        display: flex;
+        flex-direction: column;
+
+    }
+    .Keralapkg{
+        padding: 2rem 2rem;
+    }
+    .kerlapkgcol img{
+        order: 1;
+    }
+    .kerlapkgcol:first-child h2{
+        margin-bottom: 0px;
+        order:2;
+    }
+    .kerlapkgcol:first-child .hrline{
+        order: 3;
+    }
+    .kerlapkgcol:first-child p{
+        order: 4;
+    }
+    .pakageshero1 {
+        flex-direction: column-reverse;
+        gap: 35px;
+        align-items: center;
+    }
+.pakageshero1 .discount{
+    margin: 0px auto;
+    box-shadow: rgba(0, 0, 0, 0.18) 0px 3px 8px;
+    width:70%;
+    text-align: center;
+}
+.detailofpackage{
+    flex-direction: column;
+}
+.detailofpackage .detailsofbackageimg {
+    width: 100%;
+}
+.detailsofbackageimg img{
+    object-fit: cover;
+    width: 100%;
+}
+.detailofpackage .detailsofbackageimg .bhk {
+    position: absolute;
+    top: 95%;
+    z-index: 5;
+    right: 50%;
+    margin-top: 0px;
+}
+.detailofpackage .detailsofpackagecontent {
+ padding: 1rem 1rem;
+    width: 100%;
+}
+.package-blurbs {
+    padding: 1rem 2rem;
+}
+}
+@media screen and (max-width:400px){
+    .pakageshero1{
+        padding: 1rem 1rem;
+    }
+    .packagehero{
+        height: 50vh;
+    }
+    .pakageshero1 .discount{
+        padding: 2rem 1rem;
+        width: 100%;
+    }
+    .scrolldown{
+        padding: 2rem 1rem;
+    }
+    .detailpackage .header2{
+        font-size: 24px;
+        margin-bottom: 15px;
+
+    }
+    .detailpackage {
+        padding: 1rem 1rem;
+    }
+    .detailofpackage{
+        padding: 0rem;
+    }
+    .detailsofpackagecontent .package-blurbs{
+        flex-direction: column;
+    }
+    .detailsofpackagecontent .package-blurbs .package-blurbscol{
+        width: 100%;
+    }
+    .package-blurbs{
+        padding: 1rem 1rem;
+    }
+    .detailsofpackagecontent .price {
+        margin-top: 15px;
+        margin-left: 0px;
+    }
+}

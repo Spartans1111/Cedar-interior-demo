@@ -1,0 +1,243 @@
+.successstory {
+  padding: 1rem 0 6rem 0rem;
+}
+
+.build-success {
+  text-align: center;
+  display: inline-block;
+  color: #ffffffb2;
+  font-family: "Encode Sans Expanded";
+  font-size: 11px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: normal;
+  letter-spacing: 0.30625rem;
+  text-transform: uppercase;
+  border-radius: 1.5rem;
+  background: rgba(68, 67, 67, 0.171);
+  backdrop-filter: blur(14.199999809265137px);
+  padding: 10px 25px;
+  margin: auto;
+}
+.success .header2 {
+  margin: 20px 0px;
+  font-size: 38px;
+  font-weight: 500;
+  color: #fff;
+}
+.sucees-elevate {
+  color: #f1f0ee;
+  text-align: center;
+  font-family: "Montserrat", sans-serif;
+  font-size: 15px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 1.5rem;
+  letter-spacing: 0.02813rem;
+  width: 70%;
+  margin: 15px auto;
+}
+.success {
+  position: relative;
+  text-align: center;
+  padding: 4rem 2rem 8rem 2rem;
+  background: url("../../../images/success.png") no-repeat center center/cover;
+  margin: 0 35px;
+  z-index: 1;
+  border-radius: 30px;
+}
+.success::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  border-radius: 30px;
+  background-color: rgba(
+    116,
+    81,
+    30,
+    0.651
+  ); /* Overlay color with transparency */
+  z-index: -1; /* Make sure it stays behind the content */
+}
+.success-card2 {
+  display: flex;
+  gap: 50px;
+  justify-content: space-between;
+  align-items: center;
+}
+.success-card {
+  width: 85%;
+  margin: auto;
+  background-color: #fcfcfc;
+  padding: 4rem 3rem;
+  border-radius: 15px; /* Apply border-radius to the main card */
+  border-top: 5px solid #ffcd93;
+
+  z-index: 8;
+  position: relative;
+  margin-top: -5%;
+  overflow: hidden; /* This ensures pseudo-elements respect the border-radius */
+}
+
+.success-card::before,
+.success-card::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  width: 5px;
+  background: linear-gradient(to bottom, #ffcd93, rgba(255, 205, 147, 0));
+  border-radius: 15px; /* Apply border-radius to pseudo-elements */
+}
+
+.success-card::before {
+  left: 0;
+  border-top-left-radius: 15px; /* Set top-left corner radius */
+  border-bottom-left-radius: 15px; /* Optional, for bottom-left corner radius */
+}
+
+.success-card::after {
+  right: 0;
+  border-top-right-radius: 15px; /* Set top-right corner radius */
+  border-bottom-right-radius: 15px; /* Optional, for bottom-right corner radius */
+}
+
+.success-card2 .blurb {
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+}
+.blurb h4 {
+  color: #6c4c27;
+  text-align: center;
+  font-family: "Montserrat", sans-serif;
+  font-size: 19px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  letter-spacing: -0.01188rem;
+  text-transform: uppercase;
+  margin-top: 35px;
+}
+.blurb p {
+  color: #6c4c27;
+  text-align: center;
+  font-family: "Encode Sans Expanded";
+  font-size: 13px;
+  font-weight: 400px;
+  line-height: 1.5rem; /* 100% */
+  letter-spacing: 0.00813rem;
+}
+.success-card1 img {
+  width: 20%;
+}
+
+.success-card-mob{
+  display: none;
+}
+
+@media screen and (max-width: 800px) {
+  .success {
+    padding: 4rem 2rem 4rem 2rem;
+  }
+  .sucees-elevate {
+    width: 100%;
+  }
+  .success-card {
+    width: 90%;
+    padding: 2rem 1rem;
+    gap: 10px;
+  }
+}
+@media screen and (max-width: 400px) {
+
+  .successstory {
+    margin: 0 1rem;
+  }
+
+  .success-card {
+    display: flex;
+    flex-direction: column;
+  }
+  .success {
+    width: 100%;
+    padding: 2rem 1rem 2rem 1rem;
+    margin: 0;
+  }
+
+  .success .header2{
+    font-size: 27px;
+  }
+
+  .build-success {
+    padding: 10px 15px;
+  }
+
+  .sucess-card1, .success-card2{
+    display: none;
+  }
+
+  .success-card-mob{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .success-card-mob .item,
+  .success-card-mob .item .blurb{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .blurb h4 {
+    margin-top: 0;
+  }
+
+}
+
+
+
+
+
+
+.card-color {
+  list-style: none;
+  display: flex;
+  justify-content: space-between;
+  position: relative;
+}
+
+.card-color li {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+@keyframes animate-in {
+  0% {
+    transform: scaleX(1);
+  }
+  100% {
+    transform: scaleX(0);
+  }
+}
+
+.card-color::before {
+  animation: animate-in 8s infinite;
+  animation-timing-function: cubic-bezier(0.3, 0.3, 0.3, 0.3);
+  transform-origin: 100% 100%;
+  content: "";
+  position: absolute;
+  inset: 0;
+  background-color: #fcfcfc;
+  opacity: 75%;
+}

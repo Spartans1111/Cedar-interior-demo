@@ -1,0 +1,190 @@
+nav{
+    font-family: "Montserrat", sans-serif;  
+    display: flex;
+    align-items: center;
+    padding: 15px 2rem;
+    justify-content: space-between;
+    box-shadow: rgba(204, 212, 221, 0.8) 0px 8px 24px;
+    overflow-x: hidden;
+    background-color: #fff;
+   
+}
+nav.scrolled {
+    background-color: rgba(255, 255, 255, 0.9);  /* Slightly transparent background when scrolled */
+  }
+nav ul{
+    display: flex;
+    align-items: center;
+    list-style:none;
+    gap: 20px;
+}
+nav ul li a{
+    font-family: "Montserrat", sans-serif;
+    font-size: 14px;
+    color: var(--black);
+    letter-spacing: 1px;
+    font-weight: 500;
+    text-decoration: none;
+}
+.navbtn-container{
+
+    display: flex;   
+    gap: 10px;
+    margin-left: 20px;
+}
+nav ul li{
+    display: inline-block;
+}
+.navbtn{
+    font-family: "Montserrat", sans-serif;  
+    text-transform: uppercase;
+    padding: 8px 12px 8px 13px;
+    border-radius: 35px;
+    
+    border: none;
+    cursor: pointer;
+   
+    background-color:#4d1030;
+    border:1px solid #4d1030;
+}
+.navbtn a{
+    font-size: 14px;
+    color: #FFF;
+    text-decoration: none;
+    
+}
+.navbtn span{
+    vertical-align: middle;
+    margin-right: 5px;
+}
+
+
+.humbargur{
+    display: none;
+    font-size: 2rem;
+    cursor: pointer;
+    color: var(--yellow);
+}
+.active a {
+    color: var(--rose);
+    position: relative;
+    transition: width 0.3s ease-in-out;
+  }
+  .active a::after{
+    content: '';
+    width: 100%;
+    height: 2px;
+    position: absolute;
+    background-color: #CC8835;
+    bottom: -30%;
+    left: 0;
+  }
+  .active a::before{
+    content: '';
+    width: 50%;
+    height: 2px;
+    position: absolute;
+    background-color: #CC8835;
+    bottom: -60%;
+    left: 0;
+  }
+
+ /* For desktop view */
+.navbtn-container {
+    display: block; /* Always display on desktop */
+}
+
+/* For mobile view */
+@media (max-width: 768px) {
+    .navbtn-container {
+        display: none;
+    }
+
+    .navbtn-container-mobile {
+        display: block;
+        text-align: center;
+        margin-top: 1rem;
+    }
+
+    .hamburger {
+        cursor: pointer;
+        font-size: 2rem;
+        position: absolute;
+        right: 20px;
+        top: 20px;
+    }
+
+    .navlinkactive {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+}
+
+/*media query--*/
+@media screen and (max-width:1024px) {
+    nav {
+        overflow-x: hidden;
+        padding: 15px 2rem;
+    }
+
+    .humbargur {
+        display: block;
+    }
+
+    nav ul li {
+        display: block;
+        padding: 20px 0px;
+        text-align: center;
+        width: 100%;
+    }
+
+    nav ul {
+        position: absolute;
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        height: auto;
+        top: 6%;
+        right: 100%;
+        background-color: var(--white);
+        z-index: 99;
+        text-align: center;
+        align-items: center;
+        transition: all 0.5s;
+        margin: 2rem 0;
+    }
+
+    .navbtn-container {
+        margin-left: 0px;
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+        padding-top: 20px;
+    }
+
+    .navlinkactive {
+        right: 0;
+        margin: 2rem 0;
+        padding: 1rem 0;
+    }
+
+    .logo img {
+        width: 75%;
+    }
+
+    .humbargur {
+        font-size: 1.8rem;
+    }
+
+    .navbtn-container {
+        display: none; /* Hide the phone number button on tablets and mobile */
+    }
+}
+
+@media screen and (max-width: 368px) {
+    nav {
+        width: 100%;
+        overflow-x: hidden;
+    }
+}

@@ -1,0 +1,116 @@
+.workimgcol {
+    position: relative;
+    overflow: hidden;
+    flex: 1;
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    height: 600px; 
+}
+.workimg{
+    display: flex;
+    gap: 20px;
+    padding: 4rem 2rem;
+}
+.work{
+    padding: 4rem 0rem;
+    background-color: #fcfcfc;
+    text-align: center;
+}
+.work .hr{
+    width: 4%;
+    height: 2px;
+    margin-top: 15px;
+    background-color: #D18F44;;
+}
+.work .header2{
+    font-size: 36px;
+    font-weight: 400;
+}
+.work p{
+    font-size: 14px;
+    margin: 20px 0px;
+    font-family: "Montserrat", sans-serif;
+    color: #272727;
+}
+
+.workimgcol img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: all 0.5s ease; 
+}
+
+.black-image {
+    z-index: 2;
+    filter: grayscale(100%);
+}
+
+.normal-image {
+    z-index: 1;
+    /* transform: translateY(100%);  */
+    opacity: 0; /* Hidden initially */
+}
+
+.workimgcol:hover .normal-image {
+    /* transform: translateY(0);  */
+    opacity: 1;
+}
+
+.workimgcol:hover .black-image {
+    transform: translateY(100%); 
+    transition: transform 0.5s ease; 
+}
+
+.workimgcol .workcontent {
+    font-family: "Montserrat", sans-serif;
+    background-color: #323232;
+    color: #fff;
+    padding: 15px 25px;
+    font-size: 14px;
+    text-align: center;
+    position: absolute;
+    bottom: 50%;
+    z-index: 3;
+    transition: bottom 0.5s ease; /* Smooth transition for bottom property */
+}
+
+.workimgcol:hover .workcontent {
+    bottom: 0%;
+}
+
+@media screen and (max-width:800px) {
+
+}
+
+@media screen and (max-width:400px) {
+    .workimgcol {
+        width: 100%; 
+        margin-bottom: 20px;
+        flex-direction: column;
+       
+    }
+    .workimg{
+        display: block;
+        flex-direction: column;
+        gap: 20px;
+        padding: 2rem;
+    }
+
+    .workimgcol img {
+        width: 100%;
+        height: 100%; 
+      }
+
+
+    .work .header2{
+        font-size: 27px;
+    }
+
+    .work .hr{
+        width: 8%;
+    }
+}

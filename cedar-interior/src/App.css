@@ -1,0 +1,129 @@
+:root{
+  --yellow:#CC8835;
+  --black:#000;
+  --white:#fff;
+  --rose:#4F0B30;
+  --lightblack:color: #3B352E;
+}
+*{
+  box-sizing: border-box;
+  margin: 0px;
+  padding: 0px;
+  
+}
+html{
+  overflow-x: hidden;
+}
+body{
+  background-color: #fcfcfc;
+
+ box-sizing: border-box;
+ height: auto;
+}
+nav, section, header, footer, main {
+  overflow-x: hidden; 
+}
+/*---button code-----*/
+.btn1{
+  width: 97%;
+    margin-top: 25px;
+    font-family: "Montserrat", sans-serif; 
+    background-color: #D9A264;
+    border-radius: 1.8125rem;
+    border: none;
+    font-size: 1rem;
+    padding: 15px 32px;
+    color: #FAFAFA;
+    cursor: pointer;
+    position: relative;
+}
+
+.btn1 span{
+  padding: 12px 11px 8px 15px;
+  color: #fff;
+  background: #edc79d96;
+  margin-left: 33px;
+  border-radius: 41px;
+  position: absolute;
+  right: 7px;
+  top: 5px;
+}
+
+
+
+
+/*---btn2---*/
+.btn2{
+  align-items: center;
+      font-size: 0.875rem;
+    display: inline-flex;
+    justify-content: space-between;
+    font-family: "Encode Sans Expanded", sans-serif;
+    border-radius: 1.8125rem;
+    border: none;
+    padding: 5px 5px 5px 18px;
+    color: #FAFAFA;
+    cursor: pointer;
+    text-align: left;
+    background: rgba(23, 23, 23, 0.70);
+    -webkit-backdrop-filter: blur(14.199999809265137px);
+    backdrop-filter: blur(14.199999809265137px);
+}
+.btn2 span{
+  vertical-align: middle;
+  padding: 5px 7px;
+  color: #fff;
+  background: #3a3a39;
+  margin-left: 14px;
+  border-radius: 41px;
+}
+p{
+  color: #2C3440;
+  font-family: "Montserrat", sans-serif;
+font-size: 15px;
+font-style: normal;
+font-weight: 350;
+line-height:1.5rem;
+letter-spacing: 0.75px;
+}
+
+.header2{
+  color: #DF9843;
+  font-size: 34px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 1.4em;
+  letter-spacing: -0.03125rem;
+  font-family: "Montserrat", sans-serif;
+}
+.header2 span{
+  color: #42353C;
+}
+h6{
+  color: #2c34408f;
+  font-family: "Montserrat", sans-serif;
+font-size: 34px;
+font-style: normal;
+font-weight: 300;
+margin: 0.5rem 0rem;
+}
+.discount{
+  border-radius: 15px;
+  background: #fbfbfb;
+  backdrop-filter: blur(14.199999809265137px);
+width: 65%;
+padding: 2rem;
+
+}
+.smallhead{
+  color: #585349;
+  font-weight: 400;
+  font-size: 20px;
+  font-family: "Montserrat", sans-serif;
+}
+@media screen and (max-width:400px) {
+  .header2{
+    font-size: 1.8rem;
+  }
+
+}
