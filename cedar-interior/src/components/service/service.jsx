@@ -11,6 +11,8 @@ import Serviceabt from "./servicabt/serviceabt";
 
 function service() {
   return (
+
+    
     <div className="service-main">
       <div className="servicehero"></div>
       <div className="servicehero1">
@@ -27,7 +29,7 @@ function service() {
         </div>
       </div>
       <div className="serviceinterior">
-        <div className="serviceinteriorcol  sercol1">
+        <div className="serviceinteriorcol sercol1">
           <div className="service-slide">
             {" "}
             <Aboutslider />
@@ -47,7 +49,10 @@ function service() {
       <Succes />
       <div className="servicegap"></div>
       <Testimonial />
+      
     </div>
+
+
   );
 }
 

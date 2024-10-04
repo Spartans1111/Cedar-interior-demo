@@ -35,7 +35,7 @@
 }
 
 /*slider code*/
-.aboutslider {
+/* .aboutslider {
   display: flex;
   transition: transform 0.5s ease-in-out;
   height: 55vh;
@@ -55,7 +55,59 @@
   height: 100%;
   object-fit: cover;
   border-radius: 20px;
+} */
+
+
+.aboutslider {
+  position: relative;
+  width: 100%;
+  height: 60vh;
+  perspective: 1000px; /* 3D perspective for flip effect */
+  overflow: hidden;
 }
+
+.about-slider-inner {
+  position: relative;
+  width: 100%;
+  height: 100%;
+}
+
+.about-slider-inner .h-slide {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  transition: transform 0.8s ease-in-out, z-index 0s 0.8s;
+  backface-visibility: hidden; /* Hide the back of the flip */
+  transform-style: preserve-3d; /* Preserve the 3D flip */
+  z-index: 1; /* Default z-index */
+}
+
+.about-slider-inner .h-slide img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 20px;
+}
+
+.about-slider-inner .active {
+  transform: rotateY(0deg); /* Front view */
+  z-index: 2; 
+  transition: transform 0.8s ease-in-out;
+}
+
+.about-slider-inner .previous {
+  transform: rotateY(180deg); 
+  z-index: 1; 
+  transition: transform 0.8s ease-in-out, z-index 0s 0.8s;
+}
+
+.about-slider-inner .h-slide:not(.active):not(.previous) {
+  transform: rotateY(90deg); 
+  z-index: 0;
+}
+
 
 .aboutheroright {
   margin-left: 1rem;

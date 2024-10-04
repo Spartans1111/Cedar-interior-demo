@@ -6,27 +6,29 @@ import aboutimg3 from '../../images/aboutpage/aboutimg4.png';
 const AboutSlider = () => {
   const [currentIndex, setCurrentIndex] = useState(0);
   const images = [aboutimg1, aboutimg2, aboutimg3];
-
+  
   useEffect(() => {
     const interval = setInterval(() => {
-      setCurrentIndex((prevIndex) => (prevIndex + 1) % images.length);
-    }, 3000); // Adjust the interval for flip speed
+      setCurrentIndex(prevIndex => (prevIndex + 1) % images.length);
+    }, 3000); 
     
     return () => clearInterval(interval);
-  }, [images.length]);
+  }, []); 
 
   return (
-    <div className="aboutslider">
-      {images.map((src, index) => (
-        <div
-          key={index}
-          className={`h-slide ${currentIndex === index ? 'active' : ''}`}
-        >
-          <img src={src} alt={`Slide ${index}`} />
-        </div>
-      ))}
+    <div className='aboutslider'>
+      <div className="about-slider-inner">
+        {images.map((src, index) => (
+          <div 
+            key={index} 
+            className={`h-slide ${index === currentIndex ? 'active' : ''} ${index === (currentIndex - 1 + images.length) % images.length ? 'previous' : ''}`}
+          >
+            <img src={src} alt={`Slide ${index}`} />
+          </div>
+        ))}
+      </div>
     </div>
   );
-};
+}
 
 export default AboutSlider;

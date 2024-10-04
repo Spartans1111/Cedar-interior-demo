@@ -196,6 +196,14 @@
     .servicehero1{
         padding: 0rem 1rem;
     }
+
+    .serviceinterior{
+        display: block;
+    }
+
+    .sercol1 {
+         padding-left: 0;
+    }
 }
 @media screen and (max-width:400px) {
     .serviceinterior .service-slide{
