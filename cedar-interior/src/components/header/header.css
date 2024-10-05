@@ -94,6 +94,33 @@ nav ul li{
     display: block; /* Always display on desktop */
 }
 
+
+.logo{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+}
+
+.logo img{
+    width: 54px;
+    height: 54px;
+}
+
+.logo h1{
+    color: #4F0B30;
+    font-family: "Montserrat";
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 25px; 
+    letter-spacing: 0.18px;
+}
+
+.logo-link {
+    text-decoration: none;
+  }
+
 /* For mobile view */
 @media (max-width: 768px) {
     .navbtn-container {
@@ -169,9 +196,9 @@ nav ul li{
         padding: 1rem 0;
     }
 
-    .logo img {
+    /* .logo img {
         width: 75%;
-    }
+    } */
 
     .humbargur {
         font-size: 1.8rem;

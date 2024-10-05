@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import { Link, useLocation } from "react-router-dom"; // Import Link from react-router-dom
 import "./header.css";
-import logo from "../../images/logo.png";
+import logo from "../../images/cedar-logo.png";
 import { FiMenu, FiX } from "react-icons/fi";
 import { MdPhone } from "react-icons/md";
 
@@ -16,9 +16,13 @@ const Header = () => {
 
   return (
 <nav>
+
+  <Link to='/' className="logo-link">
   <div className="logo">
-    <img src={logo} alt="Logo" />
+      <img src={logo} alt="Logo" />
+      <h1>CEDAR INTERIORS</h1>
   </div>
+  </Link>
 
   {/* Navigation Links */}
   <ul className={open ? "navlinkactive" : ""}>
