@@ -45,6 +45,7 @@
   overflow: hidden;
   position: relative;
   border-radius: 10px;
+  height: 100%;
 }
 .bedroomimg .design-btn {
   position: absolute;
@@ -125,7 +126,7 @@
   cursor: pointer;
   margin-top: 25px;
   border-radius: 15px;
-  height: 30%;
+  height: 25%;
   background-color: #d9a264;
   display: flex;
   justify-content: center;
