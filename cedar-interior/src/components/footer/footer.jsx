@@ -2,7 +2,8 @@ import React from "react";
 import Quoteform from "../formdesign/quoteform";
 import "./footer.css";
 import footerhouse from "../../images/footerhouse.png";
-import flogo from "../../images/footelogo.png";
+// import flogo from "../../images/footelogo.png";
+import flogo from "../../images/cedar-logo.png";
 import { IoLocationOutline } from "react-icons/io5";
 import { MdPhone } from "react-icons/md";
 
@@ -10,6 +11,7 @@ import { TiMessage } from "react-icons/ti";
 import fb from "../../images/footer/fb.png";
 import insta from "../../images/footer/insta.png";
 import tw from "../../images/footer/tw.png";
+import { Link } from "react-router-dom";
 
 const Footer = () => {
   return (
@@ -29,7 +31,10 @@ const Footer = () => {
       <div className="footer-bottom">
         {/* col1 */}
         <div className="footer-bottom-col col1">
-          <img src={flogo} alt="logo" />
+          <div className="logo flogo">
+            <Link to='/' className="logo-link"><img src={flogo} alt="Logo" /></Link>
+            <Link to='/' className="logo-link"><h1>CEDAR INTERIORS</h1></Link>
+          </div>
           <p>
             Elevate your spaces with Cader Designs & Interior Fitouts L.L.C.
             Experience the fusion of your aspirations with our expertise,

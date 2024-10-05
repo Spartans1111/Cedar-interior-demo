@@ -36,6 +36,18 @@ footer {
 
   margin: 0 auto;
 }
+
+.flogo img{
+  border-radius: 7px;
+}
+
+.flogo h1{
+  color :#FBFBFB;
+}
+
+
+
+
 /*--footer bottom---*/
 
 .footer-bottom {
