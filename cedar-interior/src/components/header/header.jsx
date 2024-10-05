@@ -17,12 +17,12 @@ const Header = () => {
   return (
 <nav>
 
-  <Link to='/' className="logo-link">
+  
   <div className="logo">
-      <img src={logo} alt="Logo" />
-      <h1>CEDAR INTERIORS</h1>
+    <Link to='/' className="logo-link"><img src={logo} alt="Logo" /></Link>
+    <Link to='/' className="logo-link"><h1>CEDAR INTERIORS</h1></Link>
   </div>
-  </Link>
+  
 
   {/* Navigation Links */}
   <ul className={open ? "navlinkactive" : ""}>

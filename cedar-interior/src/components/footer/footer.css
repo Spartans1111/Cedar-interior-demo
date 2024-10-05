@@ -344,7 +344,7 @@ footer .col4 form button {
     padding: 8px 10px;
   }
 }
-@media screen and (max-width: 400px) {
+@media screen and (max-width: 480px) {
   .footer-top {
     align-items: center;
     justify-content: center;
