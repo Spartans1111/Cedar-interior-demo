@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/Cedar-interior-demo/static/css/main.76cdcfd8.css",
-    "main.js": "/Cedar-interior-demo/static/js/main.e8934b68.js",
+    "main.js": "/Cedar-interior-demo/static/js/main.07f70457.js",
     "static/js/453.b06144fb.chunk.js": "/Cedar-interior-demo/static/js/453.b06144fb.chunk.js",
     "static/media/aboutimg4.png": "/Cedar-interior-demo/static/media/aboutimg4.b1340d876e9dc5e47a30.png",
     "static/media/herobanner3.png": "/Cedar-interior-demo/static/media/herobanner3.b1340d876e9dc5e47a30.png",
@@ -71,11 +71,11 @@
     "static/media/primiumquality.png": "/Cedar-interior-demo/static/media/primiumquality.b00bf0fb734725fe1e21.png",
     "index.html": "/Cedar-interior-demo/index.html",
     "main.76cdcfd8.css.map": "/Cedar-interior-demo/static/css/main.76cdcfd8.css.map",
-    "main.e8934b68.js.map": "/Cedar-interior-demo/static/js/main.e8934b68.js.map",
+    "main.07f70457.js.map": "/Cedar-interior-demo/static/js/main.07f70457.js.map",
     "453.b06144fb.chunk.js.map": "/Cedar-interior-demo/static/js/453.b06144fb.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.76cdcfd8.css",
-    "static/js/main.e8934b68.js"
+    "static/js/main.07f70457.js"
   ]
 }
