@@ -73,6 +73,62 @@ const design = () => {
           </div>
         </div>
       </div>
+
+
+      {/* design grid for mobile screen */}
+      <div className="design-grid-mob">
+        <div className="design-card">
+          <img src={img3} alt="design" />
+          <div className="design-btn">
+            <button className="btn2">
+              Living room design<span>{<GoArrowRight />}</span>
+            </button>
+          </div>
+        </div>
+        <div className="design-card">
+          {" "}
+          <img src={img4} alt="design" />
+          <div className="design-btn">
+            <button className="btn2">
+              Kitchan designs<span>{<GoArrowRight />}</span>
+            </button>
+          </div>{" "}
+        </div>
+        <div className="design-card">
+          {" "}
+          
+            <img src={img5} alt="design" />
+            <div className="design-btn">
+              <button className="btn2">
+                Bedroom designs<span>{<GoArrowRight />}</span>
+              </button>
+            </div>
+        </div>
+        <div className="design-card">
+          {" "}
+          <img src={img2} alt="design" />
+          <div className="design-btn">
+            <button className="btn2">
+              Office designs<span>{<GoArrowRight />}</span>
+            </button>
+          </div>{" "}
+        </div>
+        <div className="design-card">
+          {" "}
+          <img src={img1} alt="design" />
+          <div className="design-btn">
+            <button className="btn2">
+              Dining designs<span>{<GoArrowRight />}</span>
+            </button>
+          </div>
+        </div>
+
+        <div className="designmore">
+            <h3>10+</h3>
+            <p>Interior Designs</p>
+            <span className="designmorearrow">{<GoArrowRight />}</span>
+          </div>
+      </div>
     </div>
   );
 };

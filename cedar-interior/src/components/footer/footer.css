@@ -14,11 +14,11 @@ footer {
   flex: 1;
 }
 .ftopcol1 {
-  padding-right: 5rem;
+  padding-right: 10rem;
 }
-.ftopcol2 {
+/* .ftopcol2 {
   padding-right: 2rem;
-}
+} */
 .footermid {
   background-color: #2d2b27;
   height: 70vh;

@@ -52,3 +52,32 @@
   gap: 0px;
   flex: 1; 
 }
+
+
+
+@media screen and (max-width:800px){
+  .popup-content {
+    width: 80%;
+ }
+
+ .popuprow img {
+  width: 23rem;
+  max-height: max-content;
+ }
+}
+
+
+@media screen and (max-width:480px){
+  .popup-content {
+    padding: 40px 0;
+    width: 90%;
+}
+
+.popuprow {
+  margin-top: 0;
+}
+
+.popuprow img {
+  display: none;
+}
+}

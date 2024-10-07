@@ -22,13 +22,18 @@
     margin-bottom: 18px;
 }
 .servblurb1 p{
-    margin: 1rem 0rem;
+    margin: 2rem 0rem;
 }
 .servblurb1{
     background-color: #f2f2f2;
-    padding: 2rem 2rem;
+    padding: 3rem 2rem;
     border-radius: 15px;
 }
+
+.servblurb1 .smallhead{
+    font-size: 26px;
+}
+
 .servblurb1 .btn2{
     margin-top: 15px;
 }

@@ -587,7 +587,8 @@
     gap: 15px;
   }
   .yofexp {
-    width: 80%;
+    width: 60%;
+    margin-right: 0;
   }
   .yofexp p {
     margin-top: 0px;
@@ -646,5 +647,9 @@
   right: 0%;
   bottom: 20% !important;
   z-index: 5;
+}
+
+.aboutheroright {
+  margin-left: 0;
 }
 }

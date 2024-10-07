@@ -139,6 +139,10 @@
   display: none;
 }
 
+.success-card-mob p, .success-col p{
+  color: #6c4c27 !important;
+}
+
 @media screen and (max-width: 800px) {
   .success {
     padding: 4rem 2rem 4rem 2rem;

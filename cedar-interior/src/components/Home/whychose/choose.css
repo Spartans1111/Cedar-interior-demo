@@ -86,7 +86,6 @@
 .choose-contactus {
   position: absolute;
   bottom: -100%;
-  left: 0;
   width: 96%;
   background: rgba(190, 189, 189, 0.041);
   backdrop-filter: blur(14.199999809265137px);
