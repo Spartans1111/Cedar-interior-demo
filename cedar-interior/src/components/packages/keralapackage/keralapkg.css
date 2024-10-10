@@ -22,7 +22,16 @@
 }
 .kerlapkgcol img{
     margin-bottom: 25px;
+    width: 100%;
+    
 }
+
+@media screen and (max-width:1280px){
+    .Keralapkg {
+        padding: 3rem 2rem;
+    }
+}
+
 @media screen and (max-width:1024px) {
     .Keralapkg{
         flex-direction: column;

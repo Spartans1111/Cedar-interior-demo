@@ -4,10 +4,9 @@ nav{
     align-items: center;
     padding: 15px 2rem;
     justify-content: space-between;
-    box-shadow: rgba(204, 212, 221, 0.8) 0px 8px 24px;
+    box-shadow: 0px 4px 16.1px 0px rgba(0, 0, 0, 0.07);
     overflow-x: hidden;
     background-color: #fff;
-   
 }
 nav.scrolled {
     background-color: rgba(255, 255, 255, 0.9);  /* Slightly transparent background when scrolled */

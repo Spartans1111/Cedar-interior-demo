@@ -103,6 +103,12 @@
   left: auto !important;
 }
 
+@media screen and (max-width: 1280px) {
+  .heroslider .swiper-button-prev {
+    right: 10% !important;
+  }
+}
+
 @media screen and (max-width: 1024px) {
   .heroslider {
     height: 60vh;

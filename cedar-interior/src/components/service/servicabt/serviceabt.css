@@ -90,3 +90,16 @@
     color: #e7e6e59d;
     border: 1px solid #FFF;
 }
+
+
+@media (min-width: 1024px) and (max-width: 1280px){
+    .servblurb1 {
+        padding: 1rem 2rem;
+    }
+    .servblurb1 .smallhead {
+        font-size: 23px;
+    }
+    .servblurb1 p {
+        margin: 1rem 0rem;
+    }
+}

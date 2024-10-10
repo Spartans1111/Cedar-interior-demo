@@ -364,6 +364,16 @@
   margin-left: 15px;
 }
 
+@media screen and (max-width:1280px) {
+  .aboutborderimg {
+    top: 2%;
+  }
+
+  .bestsellcard::after {
+    bottom: 17.3%;
+  }
+}
+
 @media screen and (max-width: 1024px) {
   .about-hero {
     padding: 8rem 2rem 3rem 2rem;

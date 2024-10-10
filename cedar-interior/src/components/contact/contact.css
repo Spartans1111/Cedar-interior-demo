@@ -169,6 +169,12 @@
 }
 
 
+@media screen and (max-width: 1280px) {
+  .contact-branch-inner {
+    padding: 2rem 2rem;
+  }
+}
+
 @media screen and (max-width: 1024px) {
   .contact-top {
     padding: 0rem 6rem;
