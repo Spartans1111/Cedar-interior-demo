@@ -30,19 +30,19 @@ const Header = () => {
       <Link to="/" onClick={closeMenu}>HOME</Link>
     </li>
     <li className={isActive("/about") ? "active" : ""}>
-      <Link to="/about" onClick={closeMenu}>ABOUT US</Link>
+      <Link to="/about" onClick={closeMenu}>OUR STORY</Link>
     </li>
     <li className={isActive("/service") ? "active" : ""}>
-      <Link to="/service" onClick={closeMenu}>SERVICES</Link>
+      <Link to="/service" onClick={closeMenu}>BESPOKE INTERIORS</Link>
     </li>
     <li className={isActive("/locations") ? "active" : ""}>
-      <Link to="/locations" onClick={closeMenu}>OUR LOCATIONS</Link>
+      <Link to="/locations" onClick={closeMenu}>OUR STUDIOS</Link>
     </li>
     <li className={isActive("/packages") ? "active" : ""}>
       <Link to="/packages" onClick={closeMenu}>PACKAGES</Link>
     </li>
     <li className={isActive("/gallery") ? "active" : ""}>
-      <Link to="/gallery" onClick={closeMenu}>GALLERY</Link>
+      <Link to="/gallery" onClick={closeMenu}>SHOWCASE</Link>
     </li>
     <li className={isActive("/contact") ? "active" : ""}>
       <Link to="/contact" onClick={closeMenu}>CONTACT US</Link>
